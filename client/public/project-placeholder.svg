@@ -1,0 +1,16 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c770f0;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#7b1fa2;stop-opacity:0.3" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="#0a0a0a"/>
+  <rect width="400" height="300" fill="url(#grad)"/>
+  <text x="50%" y="45%" text-anchor="middle" fill="#c770f0" font-size="32" font-family="Raleway, sans-serif" font-weight="600">
+    Project
+  </text>
+  <text x="50%" y="55%" text-anchor="middle" fill="#888" font-size="16" font-family="Raleway, sans-serif">
+    Image Coming Soon
+  </text>
+</svg>

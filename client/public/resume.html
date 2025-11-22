@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenifer Nirmal Raj - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .resume-container {
+            width: 8.5in;
+            min-height: 11in;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: 3px solid #B87333;
+            position: relative;
+        }
+        
+        .resume-content {
+            padding: 0.5in 0.6in;
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #B87333;
+            padding-bottom: 12px;
+            margin-bottom: 16px;
+        }
+        
+        .header h1 {
+            font-size: 26px;
+            color: #2c3e50;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+        
+        .header .title {
+            font-size: 15px;
+            color: #B87333;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .contact-info {
+            font-size: 10.5px;
+            color: #555;
+            line-height: 1.5;
+        }
+        
+        .contact-info a {
+            color: #555;
+            text-decoration: none;
+        }
+        
+        .section {
+            margin-bottom: 15px;
+            page-break-inside: avoid;
+        }
+        
+        .section-title {
+            font-size: 13px;
+            font-weight: 700;
+            color: #B87333;
+            text-transform: uppercase;
+            border-bottom: 1.5px solid #B87333;
+            padding-bottom: 3px;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+        
+        .section-content {
+            font-size: 10.5px;
+            color: #333;
+            line-height: 1.45;
+        }
+        
+        .project-item, .experience-item {
+            margin-bottom: 10px;
+            page-break-inside: avoid;
+        }
+        
+        .project-title, .job-title {
+            font-weight: 700;
+            color: #2c3e50;
+            font-size: 11px;
+        }
+        
+        .project-tech, .job-duration {
+            font-style: italic;
+            color: #666;
+            font-size: 10px;
+        }
+        
+        .project-item ul, .experience-item ul {
+            margin-left: 18px;
+            margin-top: 3px;
+        }
+        
+        .project-item li, .experience-item li {
+            margin-bottom: 2px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 5px;
+        }
+        
+        .skill-row {
+            display: flex;
+            gap: 8px;
+        }
+        
+        .skill-label {
+            font-weight: 700;
+            min-width: 80px;
+            color: #2c3e50;
+        }
+        
+        .skill-items {
+            flex: 1;
+        }
+        
+        .education-item, .cert-item {
+            margin-bottom: 5px;
+            line-height: 1.35;
+        }
+        
+        .education-degree {
+            font-weight: 700;
+            color: #2c3e50;
+        }
+        
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .resume-container {
+                box-shadow: none;
+                width: 100%;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+            
+            .experience-item, .project-item {
+                page-break-inside: avoid;
+            }
+            
+            /* Force page break before Featured Projects */
+            #featured-projects-section {
+                page-break-before: always;
+                margin-top: 0;
+                padding-top: 0.3in;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <div class="resume-content">
+            <!-- Header -->
+            <div class="header">
+                <h1>JENIFER NIRMAL RAJ</h1>
+                <div class="title">Full Stack Developer (MERN Stack)</div>
+                <div class="contact-info">
+                    San Clemente, CA 92672 | 949-550-8354 | jenidevops@gmail.com<br>
+                    <a href="https://github.com/Jenidevops">GitHub: github.com/Jenidevops</a> | 
+                    <a href="https://linkedin.com/in/jenidevops">LinkedIn: linkedin.com/in/jenidevops</a>
+                </div>
+            </div>
+
+            <!-- Professional Summary -->
+            <div class="section">
+                <div class="section-title">Professional Summary</div>
+                <div class="section-content">
+                    Full Stack Developer specializing in the MERN stack with experience building scalable, user-focused web applications since 2021. Leverage 10+ years of research, analytical thinking, and problem-solving from a biotechnology background to excel in software development. Skilled in React, Node.js, Express, MongoDB, and modern UI frameworks. Developed 15+ full-stack applications with optimized load times and well-structured, performance-oriented APIs tested for reliability in development environments. Bring strong attention to detail, a systematic approach, and adaptability cultivated through a career transition from scientific research to software engineering.
+                </div>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="section">
+                <div class="section-title">Technical Skills</div>
+                <div class="section-content skills-grid">
+                    <div class="skill-row">
+                        <span class="skill-label">Frontend:</span>
+                        <span class="skill-items">React, Vite, JavaScript, TypeScript, Redux, Tailwind CSS, HTML5, CSS3, Bootstrap</span>
+                    </div>
+                    <div class="skill-row">
+                        <span class="skill-label">Backend:</span>
+                        <span class="skill-items">Node.js, Express, REST APIs, JWT Authentication, Firebase</span>
+                    </div>
+                    <div class="skill-row">
+                        <span class="skill-label">Database:</span>
+                        <span class="skill-items">MongoDB, Firestore</span>
+                    </div>
+                    <div class="skill-row">
+                        <span class="skill-label">Tools:</span>
+                        <span class="skill-items">Git, GitHub, Postman, CI/CD (GitHub Actions / Vercel), Vercel, Netlify, VS Code, npm, Figma</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Professional Experience -->
+            <div class="section">
+                <div class="section-title">Professional Experience</div>
+                <div class="section-content">
+                    <div class="experience-item">
+                        <div class="job-title">Full Stack Developer | Personal & Open-Source Projects</div>
+                        <div class="job-duration">December 2021 – Present</div>
+                        <ul>
+                            <li>Build and deploy full-stack web applications using the MERN stack for a wide range of self-initiated and open-source projects</li>
+                            <li>Design scalable REST APIs, implement secure authentication (including JWT), and deploy applications on cloud platforms such as Vercel and Netlify</li>
+                            <li>Optimize application performance, achieving up to 40% faster load times across multiple projects through improved API structure, database queries, and frontend optimizations</li>
+                            <li>Develop and test reliable APIs in development environments using structured architecture, error handling, and performance-focused coding practices</li>
+                            <li>Follow Agile-inspired workflows (sprints, task planning, iterative development) to manage and deliver solo projects efficiently</li>
+                            <li>Successfully delivered 15+ full-stack, production-ready applications from planning and design to deployment</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="job-title">Associate Professor | RIA Institutions</div>
+                        <div class="job-duration">September 2015 – August 2021</div>
+                        <ul>
+                            <li>Coordinated placement programs and established industry partnerships for 500+ students</li>
+                            <li>Developed strong communication, leadership, and project coordination skills during career transition</li>
+                            <li>Built foundation in logical thinking and process optimization while exploring the technology career path</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="job-title">Assistant Professor | Dr. G.R. Damodaran College of Science</div>
+                        <div class="job-duration">June 2012 – June 2015</div>
+                        <ul>
+                            <li>Mentored research projects and designed efficient workflows for student teams</li>
+                            <li>Developed analytical and systematic problem-solving approaches through complex research troubleshooting</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="job-title">Research Engineer | CNRS, France</div>
+                        <div class="job-duration">October 2009 – March 2012</div>
+                        <ul>
+                            <li>Designed complex experiments and maintained comprehensive technical documentation</li>
+                            <li>Cultivated meticulous attention to detail and systematic problem-solving methodologies</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Projects -->
+            <div class="section" id="featured-projects-section">
+                <div class="section-title">Featured Projects</div>
+                <div class="section-content">
+                    <div class="project-item">
+                        <div class="project-title">CodeConnect – Peer Project Hub</div>
+                        <div class="project-tech">MERN Stack, Firebase</div>
+                        <ul>
+                            <li>Full-stack platform for sharing and reviewing coding projects with Firebase authentication</li>
+                            <li>Implemented Express APIs, MongoDB indexing, and infinite scroll feed functionality</li>
+                            <li>Built admin dashboard with analytics, advanced filters, search capabilities, and user metrics</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-item">
+                        <div class="project-title">Student Management System</div>
+                        <div class="project-tech">MERN Stack</div>
+                        <ul>
+                            <li>CRUD application managing 1,000+ student records with optimized database queries</li>
+                            <li>Developed scalable REST API with connectivity monitoring and responsive UI design</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-item">
+                        <div class="project-title">Bulk Mail Application</div>
+                        <div class="project-tech">MERN Stack, Gmail API</div>
+                        <ul>
+                            <li>Enterprise bulk mailer with JWT authentication and Gmail API integration</li>
+                            <li>Implemented geolocation tracking, campaign analytics, and serverless deployment architecture</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-item">
+                        <div class="project-title">Cineflix OTT Platform</div>
+                        <div class="project-tech">React, TMDB API, Vite, Tailwind CSS</div>
+                        <ul>
+                            <li>Netflix-style streaming UI with genre browsing, search filters, lazy loading, and video previews</li>
+                            <li>Integrated TMDB API for real-time content delivery and dynamic routing functionality</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-item">
+                        <div class="project-title">Weather Forecast App</div>
+                        <div class="project-tech">React, OpenWeather API</div>
+                        <ul>
+                            <li>Real-time weather application with geolocation integration and dynamic background themes</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-item">
+                        <div class="project-title">Full Stack Task Manager Application</div>
+                        <div class="project-tech">React, Node.js, Express.js, MongoDB, JWT</div>
+                        <ul>
+                            <li>Developed complete CRUD application with RESTful API and secure JWT-based authentication</li>
+                            <li>Built Express backend with protected routes and MongoDB schema for user associations</li>
+                            <li>Implemented React Hooks for state management with a glassmorphism UI featuring task filtering and sorting</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-item">
+                        <div class="project-title">E-commerce Platform – Pandora & Nostra</div>
+                        <div class="project-tech">React, Redux, Node.js, JavaScript, CSS3</div>
+                        <ul>
+                            <li>Developed full-featured e-commerce platforms with product catalog, filtering, and shopping cart using Redux</li>
+                            <li>Created checkout flow with form validation, payment gateway simulation, and dynamic pricing</li>
+                            <li>Built product detail pages with image gallery and mobile-responsive layouts for optimal UX</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-item">
+                        <div class="project-title">Apple Website Clone</div>
+                        <div class="project-tech">React, JavaScript, Tailwind CSS, GSAP</div>
+                        <ul>
+                            <li>Created pixel-perfect recreation of Apple homepage with smooth scroll animations using GSAP</li>
+                            <li>Implemented dark/light theme toggle with persistent preferences and responsive navigation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="section">
+                <div class="section-title">Education</div>
+                <div class="section-content">
+                    <div class="education-item">
+                        <span class="education-degree">PhD in Microbial Molecular Genetics</span> | Lille University of Science & Technology, France
+                    </div>
+                    <div class="education-item">
+                        <span class="education-degree">MSc in Biotechnology</span> | Bharathidasan University, India
+                    </div>
+                    <div class="education-item">
+                        <span class="education-degree">BSc in Botany (Applied Biotech & Microbiology)</span> | Bharathidasan University, India
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="section">
+                <div class="section-title">Certifications</div>
+                <div class="section-content">
+                    MERN Stack | JavaScript Algorithms | React | Node.js | MongoDB | API Design | Git & GitHub
+                </div>
+            </div>
+
+            <!-- Additional Information -->
+            <div class="section">
+                <div class="section-title">Additional Information</div>
+                <div class="section-content">
+                    <strong>Languages:</strong> English, French, Tamil, Malayalam<br>
+                    <strong>Interests:</strong> Web Development, UI/UX Design, Open Source Contribution, Photography, Sports
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
