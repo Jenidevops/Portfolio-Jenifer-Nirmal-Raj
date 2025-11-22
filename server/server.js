@@ -21,6 +21,22 @@ mongoose
   .then(() => console.log('✅ MongoDB connected'))
   .catch((err) => console.error('❌ MongoDB connection error:', err));
 
+// Root endpoint - API info
+app.get('/', (req, res) => {
+  res.json({
+    success: true,
+    message: 'Portfolio API',
+    version: '1.0.0',
+    endpoints: {
+      health: '/api/health',
+      projects: '/api/projects',
+      dashboard: '/api/dashboard',
+      admin: '/api/admin'
+    },
+    documentation: 'https://github.com/Jenidevops/Portfolio-Jenifer-Nirmal-Raj'
+  });
+});
+
 // Routes
 app.use('/api/projects', require('./routes/projectRoutes'));
 app.use('/api/dashboard', require('./routes/dashboardRoutes'));
