@@ -91,13 +91,13 @@ const Resume = () => {
             <div>
               <h3 className="text-xl font-semibold text-primary mb-3">Backend</h3>
               <p className="text-gray-300">
-                Node.js, Express, REST APIs, JWT Authentication, Firebase
+                Node.js, Express, REST APIs, JWT Authentication
               </p>
             </div>
             <div>
               <h3 className="text-xl font-semibold text-primary mb-3">Database</h3>
               <p className="text-gray-300">
-                MongoDB, Firestore
+                MongoDB, Mongoose, PostgreSQL, MySQL, Redis
               </p>
             </div>
             <div>

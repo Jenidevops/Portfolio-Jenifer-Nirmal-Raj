@@ -15,8 +15,8 @@ A stunning, modern portfolio web application featuring animated particles, typew
   - Full project details page
   
 - **Authentication**
-  - Firebase Google Authentication
-  - User profiles with bio and social links
+  - Admin password authentication
+  - Secure session management
   
 - **Comments System**
   - Authenticated users can comment on projects
@@ -78,11 +78,6 @@ A stunning, modern portfolio web application featuring animated particles, typew
 - **Express.js** - Web framework
 - **MongoDB** - Database
 - **Mongoose** - ODM
-- **Firebase Admin** - Authentication
-- **Express Validator** - Input validation
-
-### Authentication
-- **Firebase Authentication** - Google OAuth
 
 ## 📁 Project Structure
 
@@ -147,7 +142,6 @@ portfolio/
 ### Prerequisites
 - Node.js (v16 or higher)
 - MongoDB (local or Atlas)
-- Firebase account
 
 ### Installation
 
@@ -165,33 +159,17 @@ npm run install:all
 
 Create `server/.env`:
 ```env
-PORT=5000
-MONGODB_URI=mongodb://localhost:27017/portfolio
-NODE_ENV=development
-FIREBASE_PROJECT_ID=your_project_id
-FIREBASE_CLIENT_EMAIL=your_client_email
-FIREBASE_PRIVATE_KEY=your_private_key
+PORT=5001
+MONGODB_URI=your_mongodb_atlas_uri
+ADMIN_PASSWORD=your_secure_password
 ```
 
 Create `client/.env`:
 ```env
-REACT_APP_API_URL=http://localhost:5000/api
-REACT_APP_FIREBASE_API_KEY=your_firebase_api_key
-REACT_APP_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
-REACT_APP_FIREBASE_PROJECT_ID=your_project_id
-REACT_APP_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
-REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
-REACT_APP_FIREBASE_APP_ID=your_app_id
+REACT_APP_API_URL=http://localhost:5001/api
 ```
 
-4. **Set up Firebase**
-   - Go to [Firebase Console](https://console.firebase.google.com/)
-   - Create a new project
-   - Enable Google Authentication
-   - Download service account key for backend
-   - Copy web app config for frontend
-
-5. **Start MongoDB**
+4. **Start MongoDB** (if using local)
 ```bash
 mongod
 ```
@@ -208,8 +186,10 @@ npm run client  # Frontend on http://localhost:3000
 
 ## 📡 API Endpoints
 
+### Admin
+- `POST /api/admin/login` - Admin login with password
+
 ### Users
-- `POST /api/users/auth` - Get or create user
 - `GET /api/users/:id` - Get user by ID
 - `PUT /api/users/profile` - Update profile (protected)
 - `POST /api/users/bookmark/:projectId` - Toggle bookmark (protected)
